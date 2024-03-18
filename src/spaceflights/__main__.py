@@ -1,6 +1,7 @@
 """spaceflights file for ensuring the package is executable
 as `spaceflights` and `python -m spaceflights`
 """
+
 import importlib
 from pathlib import Path
 

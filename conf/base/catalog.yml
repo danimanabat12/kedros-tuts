@@ -24,3 +24,15 @@ preprocessed_companies:
 preprocessed_shuttles: 
   type: pandas.ParquetDataset
   filepath: data/02_intermediate/preprocessed_shuttles.pq
+
+model_input_table: 
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/model_input_table.pq
+
+# Factory version instead. We deleted the candidate para mas clean.
+# Paano gina-refer? through namespaces sa pipeline.
+# So we can define many namespaces we want while only having one dataset definition sa catalog
+"{subtype}_modelling_pipeline.regressor": 
+  type: pickle.PickleDataset
+  filepath: data/06_models/regressor_{subtype}.pkl
+  versioned: True

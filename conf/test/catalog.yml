@@ -1,0 +1,5 @@
+# Consolidate base + local, tapos i-override ani ang companies definition sa catalog.yml sa base kay gi-specify
+# man nato na kani nga environment ang gamiton. 
+companies:
+  type: pandas.CSVDataset
+  filepath: data/00_test/companies.csv
